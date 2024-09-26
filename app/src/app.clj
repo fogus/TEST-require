@@ -1,4 +1,5 @@
-(ns app)
+(ns app
+  (:require [lib :as lib]))
 
 (comment
   ;; fail
@@ -9,7 +10,7 @@
 )
 
 (defn frobnicate []
-  (lib/lib-macro 1 2 3))
+  (lib/lib-macro "1"))
 
 (comment
   (frobnicate)

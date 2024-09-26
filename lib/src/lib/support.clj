@@ -1,4 +1,5 @@
-(ns lib.support)
+(ns lib.support
+  (:require [clojure.edn :as edn]))
 
-(defn do-macro-support [xs]
-  (vec xs))
+(defn do-macro-support [s]
+  (edn/read-string (first s)))
